@@ -5,7 +5,7 @@
 
 #PBS -N matsyshyn_mpi_statistics
 
-input="/mnt/work/tb039/${id}.out"
+input="${PBS_O_WORKDIR}/output/${id}.out"
 output="${PBS_O_WORKDIR}/statistics/${id}.out"
 
 s1count=`echo ssh s1 "cat ${input}" | grep -o s1. | wc -l`

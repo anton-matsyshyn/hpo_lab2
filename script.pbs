@@ -10,7 +10,7 @@
 #PBS -t 1-100
 
 id=`echo $PBS_JOBID | grep -oE '[0-9]*' | head -1`
-output="/mnt/work/tb039/${id}.out"
+output="${PBS_O_WORKDIR}/output/${id}.out"
 
 ml icc
 ml openmpi
