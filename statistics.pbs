@@ -10,6 +10,18 @@ output="${PBS_O_WORKDIR}/statistics/${id}.out"
 
 s1count=`cat ${input} | grep -o s1. | wc -l`
 s2count=`cat ${input} | grep -o s2. | wc -l`
+s3count=`cat ${input} | grep -o s3. | wc -l`
+s4count=`cat ${input} | grep -o s4. | wc -l`
+s5count=`cat ${input} | grep -o s5. | wc -l`
+s6count=`cat ${input} | grep -o s6. | wc -l`
+s7count=`cat ${input} | grep -o s7. | wc -l`
+s8count=`cat ${input} | grep -o s8. | wc -l`
 
 echo "s1 count ${s1count}" >> $output
 echo "s2 count ${s2count}" >> $output
+echo "s3 count ${s3count}" >> $output
+echo "s4 count ${s4count}" >> $output
+echo "s5 count ${s5count}" >> $output
+echo "s6 count ${s6count}" >> $output
+echo "s7 count ${s7count}" >> $output
+echo "s8 count ${s8count}" >> $output
