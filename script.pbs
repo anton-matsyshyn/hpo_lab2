@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#PBS -l nodes=s1:ppn2+s2:ppn=2
+#PBS -l nodes=s1:ppn=2+s2:ppn=2
 
 #PBS -l walltime=0:02:00
 #PBS -o matsyshyn_mpi_hello.o${PBS_JOBID}
